@@ -1,0 +1,27 @@
+@import "reset.css";
+@import "header.css";
+@import "landing.css";
+@import "featured.css";
+@import "un-response.css";
+@import "trending.css";
+@import "footer.css";
+@import "article.css";
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+@media (max-width: 1824px) and (min-width: 1251px) {
+    
+}
+
+@media (max-width: 1250px) and (min-width: 993px) {
+   
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 767px) {
+    
+}

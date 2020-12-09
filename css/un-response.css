@@ -1,0 +1,241 @@
+#unitednations {
+    width: 100%;
+}
+
+#united-nations .container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    background: black;
+    color: white;
+    height: 80px;
+}
+
+#united-nations .container h5 {
+    align-self: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.row {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "box1 box2 box3 box4";
+}
+
+.row .box1 {
+    height: 400px;
+    background-image: url(../img/un1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.row .box2 {
+    height: 400px;
+    background-image: url(../img/un2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.row .box3 {
+    height: 400px;
+    background-image: url(../img/un3.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.row .box4 {
+    height: 400px;
+    background-image: url(../img/un4.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.box1 .filter-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: #ef476f;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+.box2 .filter-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: #ffd166;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+.box3 .filter-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: #06d6a0;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+.box4 .filter-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: #118ab2;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+.box1 .filter-container:hover,
+.box2 .filter-container:hover,
+.box3 .filter-container:hover,
+.box4 .filter-container:hover {
+    opacity: .9;
+    cursor: pointer;
+}
+
+.box1 #filter,
+.box2 #filter,
+.box3 #filter,
+.box4 #filter {
+    align-self: center;
+    padding: 0px 50px;
+    border: 3px solid white;
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+}
+
+.box1 h2,
+.box2 h2,
+.box3 h2,
+.box4 h2 {
+    margin-top: 80px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.box1 h1,
+.box2 h1,
+.box3 h1,
+.box4 h1 {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.box1 p,
+.box2 p,
+.box3 p,
+.box4 p {
+    color: white;
+    font-size: 16px;
+}
+@media (max-width: 1824px) and (min-width: 1251px) {
+    .row {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "box1 box2"
+            "box3 box4";
+        grid-gap: 0.5rem;
+    }
+
+    .box1 #filter,
+    .box2 #filter,
+    .box3 #filter,
+    .box4 #filter {
+        padding: 0px;
+    }
+
+    #united-nations .container h5 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1250px) and (min-width: 993px) {
+    .row {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "box1 box2"
+            "box3 box4";
+        grid-gap: 0.5rem;
+    }
+
+    .box1 #filter,
+    .box2 #filter,
+    .box3 #filter,
+    .box4 #filter {
+        padding: 0px;
+    }
+
+    #united-nations .container h5 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .row {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "box1"
+            "box2"
+            "box3"
+            "box4";
+        grid-gap: 0.5rem;
+    }
+
+    .box1 #filter,
+    .box2 #filter,
+    .box3 #filter,
+    .box4 #filter {
+        padding: 0px;
+    }
+
+    #united-nations .container h5 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .row {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "box1"
+        "box2"
+        "box3"
+        "box4";
+        grid-gap: 0.5rem;
+    }
+    .box1 #filter,
+    .box2 #filter,
+    .box3 #filter,
+    .box4 #filter {
+    padding: 0px;
+    }
+    #united-nations .container h5 {
+        font-size: 20px;
+    }
+}

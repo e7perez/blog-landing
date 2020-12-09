@@ -1,0 +1,103 @@
+#landing {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom, rgba(127, 46, 136, .24), rgba(127, 46, 136, .24)),
+    url('../img/landing_page.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.landing-container {
+    width: 50%;
+    padding-left: 100px;
+}
+.landing-container h1 {
+    font-size: 90px;
+    font-weight: 900;
+    color: white;
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+.landing-container p {
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+}
+@media (max-width: 1824px) and (min-width: 1251px) {}
+
+@media (max-width: 1250px) and (min-width: 993px) {
+    .landing-container {
+        width: 50%;
+        padding: 0px;
+        margin-left: 100px;
+    }
+
+    .landing-container h1 {
+        font-size: 60px;
+        font-weight: 900;
+        color: white;
+        margin-top: 140px;
+        margin-bottom: 20px;
+    }
+
+    .landing-container h1 br {
+        display: none;
+    }
+
+    .landing-container p br {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .landing-container {
+        width: 90%;
+        padding: 0px;
+        margin-left: 20px;
+    }
+    .landing-container h1 {
+        font-size: 60px;
+        font-weight: 900;
+        color: white;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    .landing-container h1 br {
+        display: none;
+    }
+    .landing-container p br{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #landing {
+        padding: 0px;
+        width: 100vw;
+    }
+    #hamburger {
+        margin-right: 20px;
+    }
+    .landing-container {
+        width: 90%;
+        padding: 0px;
+        margin-left: 20px;
+    }
+    #logo {
+        margin-left: 20px;
+    }
+    .landing-container h1 {
+        font-size: 45px;
+        margin-top: 50px;
+    }
+    .landing-container h1 br{
+        display: none;
+    }
+    .landing-container p {
+        font-size: 20px;
+    }
+    .landing-container p br{
+        font-size: 20px;
+        display: none;
+    }
+}

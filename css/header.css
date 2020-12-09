@@ -1,0 +1,123 @@
+#header {
+    height: 120px;
+    padding: 20px 100px;
+}
+
+#header #logo {
+    position: relative;
+}
+#header #logo .border {
+    position: absolute;
+    top: 15px;
+    height: 50px;
+    width: 50px;
+    border: 4px solid white;
+    transform: rotate(45deg);
+}
+#header #logo a{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    left: 14px;
+    top: 24px;
+}
+#header .links {
+    position: absolute;
+    margin-left: 150px;
+}
+#header .links ul {
+    margin-top: 40px;
+}
+#header .links ul li {
+    float: left;
+    margin: 0px 30px;
+}
+#header .links ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 20px;
+}
+#header a#register {
+    margin-top: 30px;
+    float: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 40px;
+    font-size: 20px;
+}
+#hamburger {
+    float: right;
+    margin-top: 30px;
+    display: none;
+}
+#hamburger .bar{
+    background: white;
+    width: 75px;
+    height: 5px;
+    margin-bottom: 10px;
+}
+@media (max-width: 1824px) and (min-width: 1251px) {
+    
+}
+
+@media (max-width: 1250px) and (min-width: 993px) {
+    #hamburger {
+        display: block;
+    }
+
+    #header .links,
+    a#register {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    #hamburger {
+        display: block;
+    }
+
+    #header .links,
+    a#register {
+        display: none;
+    }
+    #header {
+        padding: 20px 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #hamburger {
+        display: block;
+    }
+    #hamburger .bar {
+        width: 50px;
+        height: 3px;
+    }
+    #header .links, a#register {
+        display: none;
+    }
+    #header {
+        padding: 0px;
+    }
+    #header #logo .border {
+        position: absolute;
+        top: 15px;
+        height: 40px;
+        width: 40px;
+        border: 2px solid white;
+        transform: rotate(45deg);
+    }
+
+    #header #logo a {
+        position: absolute;
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        left: 11px;
+        top: 22px;
+    }
+}

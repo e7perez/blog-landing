@@ -1,0 +1,226 @@
+#featured {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.featured-container {
+    align-self: center;
+    display: grid;
+    height: 80vh;
+    grid-template-columns: .5fr .2fr .4fr .4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "left left tl tr"
+        "left left tl tr"
+        "left left tl tr"
+        "left left tl tr"
+        "left left bottom bottom"
+        "left left bottom bottom";
+    grid-gap: .5rem;
+
+}
+.featured-container .left {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url(../img/national-cancer-institute-701-FJcjLAQ-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: left;
+}
+.featured-container .top-left{
+    position: relative;
+    display: flex;
+    background-image: url(../img/ashkan-forouzani-ignxm3E1Rg4-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: tl;
+}
+.featured-container .top-right {
+    position: relative;
+    display: flex;
+    background-image: url(../img/thomas-charters-eULBxpG2Hkg-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: tr;
+}
+.featured-container .bottom {
+    position: relative;
+    display: flex;
+    background-image: url(../img/bench-accounting-C3V88BOoRoM-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: bottom;
+}
+#overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: black;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+#overlay:hover {
+    cursor: pointer;
+    opacity: .3;
+}
+.featured-container .left .info {
+    display: flex;
+    width: 100%;
+    margin-bottom: 80px;
+    z-index: 2;
+}
+.featured-container .left h3 {
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+    width: 280px;
+    padding: 20px 20px 20px 40px;
+    background: #E88AAA;
+}
+.featured-container .left h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    align-self: center;
+    margin-left: 15px;
+}
+.featured-container .top-left .info, .top-right .info, .bottom .info  {
+    align-self: flex-end;
+    background: rgba(0, 0, 0, .75);
+    padding: 10px;
+    width: 100%;
+    z-index: 2;
+}
+.featured-container .top-left .info h4,
+.top-right .info h4,
+.bottom .info h4 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+.featured-container .top-left .info p,
+.top-right .info p,
+.bottom .info p {
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 10px;
+}
+@media (max-width: 1824px) and (min-width: 1251px) {
+    .featured-container .left h3 {
+        font-size: 28px;
+        
+    }
+}
+
+@media (max-width: 1250px) and (min-width: 993px) {
+    .featured-container .left h3 {
+        font-size: 30px;
+        width: 160px;
+        padding: 20px 20px 20px 20px;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    #featured {
+        width: 100%;
+        height: auto;
+        margin: 50px 0px;
+    }
+
+    .featured-container {
+        width: 100%;
+        align-self: center;
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "left"
+            "tl"
+            "tr"
+            "bottom";
+        grid-gap: .5rem;
+
+    }
+
+    .featured-container .left h3 {
+        font-size: 30px;
+        width: 160px;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .featured-container .left h2 {
+        font-size: 30px;
+    }
+
+    .featured-container .left h2 br {
+        display: none;
+    }
+
+    .featured-container .top-left .info h4,
+    .top-right .info h4,
+    .bottom .info h4 {
+        font-size: 22px;
+    }
+
+    .featured-container .top-left .info p,
+    .top-right .info p,
+    .bottom .info p {
+        font-size: 18px;
+        font-weight: 300;
+        color: white;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #featured {
+        width: 100%;
+        height: auto;
+        margin: 50px 0px;
+    }
+    .featured-container {
+        width: 100%;
+        align-self: center;
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "left"
+            "tl"
+            "tr"
+            "bottom";
+        grid-gap: .5rem;
+
+    }
+    .featured-container .left h3 {
+        font-size: 17px;
+        width: 80px;
+        padding: 20px 20px 20px 20px;
+    }
+    .featured-container .left h2 {
+        font-size: 30px;
+    }
+    .featured-container .left h2 br{
+        display: none;
+    }
+    .featured-container .top-left .info h4,
+    .top-right .info h4,
+    .bottom .info h4 {
+        font-size: 18px;
+    }
+    .featured-container .top-left .info p,
+    .top-right .info p,
+    .bottom .info p {
+        font-size: 16px;
+        font-weight: 300;
+        color: white;
+        margin-bottom: 10px;
+    }
+}
