@@ -63,22 +63,22 @@
     height: 5px;
     margin-bottom: 10px;
 }
-#dropdown {
+#landing #dropdown {
     display: none;
     height: 100vh;
     width: 100vw;
     background: black;
     padding: 20px 0px 0px 20px;
 }
-#dropdown ul li {
+#landing #dropdown ul li {
     margin-bottom: 10px;
 }
-#dropdown ul li a {
+#landing #dropdown ul li a {
     text-decoration: none;
     color: white;
     font-size: 40px;
 }
-#dropdown h1 {
+#landing #dropdown h1 {
     color:white;
     font-size: 50px;
     font-weight: 300;
