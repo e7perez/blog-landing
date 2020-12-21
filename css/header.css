@@ -68,19 +68,25 @@
     height: 100vh;
     width: 100vw;
     background: black;
-    padding: 20px 0px 0px 20px;
+
+}
+#landing #dropdown ul {
+    padding: 50px 20px;
 }
 #landing #dropdown ul li {
     margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px #E6E6E6 solid;
 }
 #landing #dropdown ul li a {
     text-decoration: none;
+    text-transform: uppercase;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
 }
 #landing #dropdown h1 {
     color:white;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 300;
     position: absolute;
     right: 0;
