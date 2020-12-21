@@ -2,11 +2,13 @@ var dropdown = document.getElementById("dropdown");
 var open = document.getElementById("hamburger");
 var close = document.getElementById('close');
 let openMenu = () => {
-    console.log("Menu Open")
     dropdown.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    document.querySelector('html').scrollTop = window.scrollY;
 }
 let closeMenu = () => {
     dropdown.style.display = 'none';
+    document.body.style.overflow = null;
 }
 open.addEventListener("click", openMenu)
 close.addEventListener("click", closeMenu);
