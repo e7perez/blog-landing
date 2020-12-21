@@ -1,9 +1,12 @@
-const dropDown = () => {
-    var dropdown = document.getElementById("dropdown");
+var dropdown = document.getElementById("dropdown");
+var open = document.getElementById("hamburger");
+var close = document.getElementById('close');
+let openMenu = () => {
+    console.log("Menu Open")
     dropdown.style.display = 'block';
-    var close = document.getElementById('close');
-    let closeMenu = () => {
-        dropdown.style.display = 'none';
-    }
-    close.addEventListener("click", closeMenu);
 }
+let closeMenu = () => {
+    dropdown.style.display = 'none';
+}
+open.addEventListener("click", openMenu)
+close.addEventListener("click", closeMenu);
