@@ -15,9 +15,17 @@
     <body>
        
        <section id="landing">
+           <div id="dropdown">
+                <h1 id="close">x</h1>
+                <ul>
+                    <li><a href="#featured">COVID-19</a></li> 
+                    <li><a href="#united-nations">United Nations</a></li>
+                    <li><a href="#trending">Trending</a></li>
+                </ul>
+            </div>
            <nav id="header">
            <div class="header-container">
-               <div id="hamburger" onclick="">
+               <div id="hamburger" onclick="dropDown()">
                    <div class="bar"></div>
                    <div class="bar"></div>
                    <div class="bar"></div>
@@ -26,15 +34,18 @@
                    <div class="border"></div>
                    <a href="index.html">H</a>
                </div>
-               <div class="links">
+               <div id ="links" class="links">
                     <ul>
-                    <li><a href="#featured">COVID-19</a></li> 
-                    <li><a href="#united-nations">United Nations</a></li>
-                    <li><a href="#trending">Trending</a></li>
-                </ul>
+                        <li><a href="#featured">COVID-19</a></li> 
+                        <li><a href="#united-nations">United Nations</a></li>
+                        <li><a href="#trending">Trending</a></li>
+                    </ul>
                </div>
                 <a id = "register" href="">Sign Up</a>
            </div>
+           <form>
+               
+           </form>
        </nav>
             <div class="landing-container">
                 <h1>Protecting Yourself<br> While Remaining Safe.</h1>
@@ -209,6 +220,8 @@
                </ul>
            </div>
        </footer>
+       <script src="./js/gsap.min.js"></script>
        <script src="./js/header.js"></script>
+       <script src="./js/animations.js"></script>
     </body>
 </html>
