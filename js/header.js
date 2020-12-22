@@ -10,5 +10,6 @@ let closeMenu = () => {
     dropdown.style.display = 'none';
     document.body.style.overflow = null;
 }
+dropdown.addEventListener("click",closeMenu);
 open.addEventListener("click", openMenu)
 close.addEventListener("click", closeMenu);
